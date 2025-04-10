@@ -1,1 +1,89 @@
-<!DOCTYPE html><html><head><title>Formulario</title></head><body><h1>Formulario</h1></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulario de Encuesta</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 2rem;
+      background: #f9f9f9;
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 8px;
+    }
+    h1 {
+      text-align: center;
+      color: #3C3F62;
+    }
+    p {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    label {
+      display: block;
+      margin: 0.5rem 0 0.2rem;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background: #E74139;
+      color: white;
+      padding: 0.7rem 1.2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="title">Formulario de Encuesta</h1>
+  <p id="description">Contanos un poco sobre vos</p>
+  <form id="survey-form">
+    <label id="name-label" for="name">Nombre</label>
+    <input type="text" id="name" placeholder="Tu nombre" required />
+
+    <label id="email-label" for="email">Email</label>
+    <input type="email" id="email" placeholder="tu@email.com" required />
+
+    <label id="number-label" for="number">Edad</label>
+    <input type="number" id="number" min="10" max="100" placeholder="Tu edad" />
+
+    <label for="dropdown">Ocupación</label>
+    <select id="dropdown">
+      <option value="">Elegí una opción</option>
+      <option value="student">Estudiante</option>
+      <option value="worker">Trabajador</option>
+    </select>
+
+    <fieldset>
+      <legend>Preferencias de contacto</legend>
+      <label><input type="radio" name="prefer" value="email" /> Email</label>
+      <label><input type="radio" name="prefer" value="phone" /> Teléfono</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Hobbies</legend>
+      <label><input type="checkbox" value="reading" /> Lectura</label>
+      <label><input type="checkbox" value="sports" /> Deportes</label>
+      <label><input type="checkbox" value="gaming" /> Juegos</label>
+    </fieldset>
+
+    <label for="comments">Comentarios adicionales</label>
+    <textarea id="comments" rows="4" placeholder="Escribí lo que quieras..."></textarea>
+
+    <button id="submit" type="submit">Enviar</button>
+  </form>
+</body>
+</html>

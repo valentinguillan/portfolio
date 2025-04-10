@@ -1,1 +1,95 @@
-<!DOCTYPE html><html><head><title>Landing</title></head><body><h1>Landing Page</h1></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landing Page</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background: #fefefe;
+    }
+    header {
+      background: white;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      z-index: 999;
+    }
+    #header-img {
+      height: 40px;
+    }
+    #nav-bar {
+      display: flex;
+      gap: 1rem;
+    }
+    .nav-link {
+      text-decoration: none;
+      color: #3C3F62;
+      font-weight: 500;
+    }
+    section {
+      padding: 6rem 2rem 4rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    iframe {
+      width: 100%;
+      height: 360px;
+      border: none;
+      margin-top: 2rem;
+    }
+    form {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    input[type="email"] {
+      padding: 0.6rem;
+      width: 80%;
+      max-width: 400px;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input[type="submit"] {
+      background: #E74139;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header id="header">
+    <img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png" alt="Logo" />
+    <nav id="nav-bar">
+      <a class="nav-link" href="#demo">Demo</a>
+      <a class="nav-link" href="#form-section">Suscribite</a>
+    </nav>
+  </header>
+
+  <section id="demo">
+    <h2>Video del producto</h2>
+    <iframe id="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+  </section>
+
+  <section id="form-section">
+    <h2>Suscribite para más información</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input id="email" type="email" name="email" placeholder="Tu email" required />
+      <br/>
+      <input id="submit" type="submit" value="Enviar" />
+    </form>
+  </section>
+
+</body>
+</html>

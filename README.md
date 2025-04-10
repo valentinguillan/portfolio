@@ -27,7 +27,7 @@ Todos los proyectos tienen un diseño simple, moderno, responsivo y con validaci
 ## 📬 Contacto
 
 - GitHub: [@valentinguillan](https://github.com/valentinguillan)
-- Email: *(podés ponerlo si querés)*
+- Email: valentinguillan93@gmail.com
 
 ---
 

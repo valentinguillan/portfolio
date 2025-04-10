@@ -1,1 +1,151 @@
-<!DOCTYPE html><html><head><title>Docs</title></head><body><h1>Documentación Técnica</h1></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Documentación Técnica</title>
+  <style>
+    body {
+      display: flex;
+      font-family: sans-serif;
+      margin: 0;
+    }
+    #navbar {
+      width: 240px;
+      background: #f9f9f9;
+      padding: 1.5rem;
+      height: 100vh;
+      position: fixed;
+      overflow-y: auto;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.05);
+    }
+    #navbar header {
+      font-size: 1.5rem;
+      color: #3C3F62;
+      margin-bottom: 1rem;
+    }
+    #navbar a {
+      display: block;
+      margin: 0.5rem 0;
+      color: #3C3F62;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    #main-doc {
+      margin-left: 260px;
+      padding: 2rem;
+      max-width: 900px;
+    }
+    .main-section {
+      margin-bottom: 2.5rem;
+    }
+    .main-section header {
+      font-size: 1.6rem;
+      color: #3C3F62;
+      margin-bottom: 1rem;
+    }
+    p {
+      margin: 0.5rem 0;
+      line-height: 1.6;
+    }
+    code {
+      background: #eee;
+      padding: 0.4rem;
+      border-radius: 5px;
+      display: block;
+      margin: 0.5rem 0;
+      font-size: 0.9rem;
+    }
+    ul {
+      margin-top: 0.5rem;
+      padding-left: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    @media (max-width: 768px) {
+      #navbar {
+        position: static;
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+      }
+      #main-doc {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <header>Documentación</header>
+    <a class="nav-link" href="#HTML">HTML</a>
+    <a class="nav-link" href="#CSS">CSS</a>
+    <a class="nav-link" href="#JavaScript">JavaScript</a>
+    <a class="nav-link" href="#Git">Git</a>
+    <a class="nav-link" href="#Deploy">Deploy</a>
+  </nav>
+
+  <main id="main-doc">
+    <section id="HTML" class="main-section">
+      <header>HTML</header>
+      <p>HTML es el lenguaje de marcado que usamos para estructurar una página web.</p>
+      <p>Define encabezados, párrafos, enlaces, imágenes y mucho más.</p>
+      <code>&lt;h1&gt;Hola Mundo&lt;/h1&gt;</code>
+      <ul>
+        <li>Encabezados</li>
+        <li>Enlaces</li>
+        <li>Listas</li>
+      </ul>
+    </section>
+
+    <section id="CSS" class="main-section">
+      <header>CSS</header>
+      <p>CSS define los estilos visuales de nuestra web.</p>
+      <p>Se puede aplicar por etiquetas, clases o IDs.</p>
+      <code>body { background-color: #f9f9f9; }</code>
+      <ul>
+        <li>Colores</li>
+        <li>Tipografías</li>
+        <li>Layouts</li>
+      </ul>
+    </section>
+
+    <section id="JavaScript" class="main-section">
+      <header>JavaScript</header>
+      <p>JavaScript da vida a los sitios web con lógica e interactividad.</p>
+      <p>Permite modificar elementos del DOM, validar formularios, y más.</p>
+      <code>console.log("Hola desde JS");</code>
+      <ul>
+        <li>Funciones</li>
+        <li>Eventos</li>
+        <li>Condicionales</li>
+      </ul>
+    </section>
+
+    <section id="Git" class="main-section">
+      <header>Git</header>
+      <p>Git es un sistema de control de versiones.</p>
+      <p>Permite trabajar en equipo y mantener historial de cambios.</p>
+      <code>git commit -m "mensaje"</code>
+      <ul>
+        <li>Commit</li>
+        <li>Push</li>
+        <li>Branch</li>
+      </ul>
+    </section>
+
+    <section id="Deploy" class="main-section">
+      <header>Deploy</header>
+      <p>El deploy es el proceso de publicar tu sitio web.</p>
+      <p>GitHub Pages es una gran opción para sitios estáticos.</p>
+      <code>gh-pages -d ./build</code>
+      <ul>
+        <li>GitHub Pages</li>
+        <li>Netlify</li>
+        <li>Vercel</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

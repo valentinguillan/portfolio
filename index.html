@@ -1,51 +1,166 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Valentín Guillán - Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <nav id="navbar">
-    <a href="#welcome-section">Home</a>
-    <a href="#projects">Projects</a>
-    <a id="profile-link" href="https://github.com/valentinguillan" target="_blank">GitHub</a>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b0b0d" />
+    <meta name="description" content="Portfolio de Valentín: diseño gráfico, identidad visual, packaging, contenido digital y hospitalidad." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Valentín — Diseño gráfico · Digital · Hospitalidad" />
+    <meta property="og:description" content="Identidad, packaging y experiencias digitales creadas con criterio, claridad y atención al detalle." />
+    <meta property="og:url" content="https://valentinguillan.github.io/portfolio/" />
+    <meta property="og:image" content="https://valentinguillan.github.io/portfolio/og-portfolio.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Valentín — Portfolio" />
+    <meta name="twitter:description" content="Diseño gráfico · Digital · Hospitalidad" />
+    <meta name="twitter:image" content="https://valentinguillan.github.io/portfolio/og-portfolio.jpg" />
+    <title>Valentín — Portfolio</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#proyectos">Ir a proyectos</a>
 
-  <section id="welcome-section">
-    <h1>Hola, soy Valentín</h1>
-    <p>Bienvenido a mi portfolio personal como desarrollador web</p>
-  </section>
+    <header class="site-header">
+      <a class="wordmark" href="#inicio" aria-label="Volver al inicio">V<span>—</span></a>
+      <nav aria-label="Navegación principal">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#perfil">Perfil</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button class="share-button" type="button" data-share>
+        <span>Compartir</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 12v7h10v-7M12 16V4m0 0L8 8m4-4 4 4" /></svg>
+      </button>
+    </header>
 
-  <section id="projects">
-    <h2>Mis Proyectos</h2>
-    <div class="project-grid">
-      <div class="project-tile">
-        <h3>Formulario de Encuesta</h3>
-        <p>Un formulario moderno hecho con HTML y CSS.</p>
-        <a href="survey.html" target="_blank">Ver proyecto</a>
-      </div>
-      <div class="project-tile">
-        <h3>Página Tributo</h3>
-        <p>Un homenaje simple con estilo minimalista.</p>
-        <a href="tribute.html" target="_blank">Ver proyecto</a>
-      </div>
-      <div class="project-tile">
-        <h3>Landing Page</h3>
-        <p>Página de producto responsive con formulario y video.</p>
-        <a href="landing.html" target="_blank">Ver proyecto</a>
-      </div>
-      <div class="project-tile">
-        <h3>Documentación Técnica</h3>
-        <p>Documentación ficticia con navegación lateral.</p>
-        <a href="docs.html" target="_blank">Ver proyecto</a>
-      </div>
-    </div>
-  </section>
+    <main>
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-kicker reveal">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>Diseñador gráfico en Brasil</span>
+        </div>
+        <h1 id="hero-title" class="reveal"><span>Ideas claras.</span><br />Diseño que conecta.</h1>
+        <div class="hero-bottom reveal">
+          <p>Creo identidades, piezas editoriales, packaging y experiencias digitales para marcas con algo real que contar.</p>
+          <a class="round-link" href="#proyectos" aria-label="Ver proyectos">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16m0 0 6-6m-6 6-6-6" /></svg>
+          </a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <span class="shape shape-blue"></span>
+          <span class="shape shape-coral"></span>
+          <span class="shape shape-line"></span>
+        </div>
+      </section>
 
-  <footer>
-    © 2025 Valentín Guillán. Todos los derechos reservados.
-  </footer>
-</body>
+      <section class="projects" id="proyectos" aria-labelledby="projects-title">
+        <div class="section-head reveal">
+          <p class="eyebrow">Selección / 2026</p>
+          <h2 id="projects-title">Proyectos destacados</h2>
+        </div>
+
+        <article class="project project-featured reveal">
+          <div class="project-visual union-art" aria-hidden="true">
+            <span class="union-label">LA UNIÓN</span>
+            <span class="union-stamp">TDF<br />AIAS</span>
+            <span class="union-line"></span>
+          </div>
+          <div class="project-info">
+            <p class="project-number">01</p>
+            <div>
+              <p class="project-type">Identidad · Packaging · Social media</p>
+              <h3>Panadería &amp; Confitería La Unión</h3>
+              <p>Un sistema visual inspirado en Tierra del Fuego que une tradición, territorio y una comunicación cotidiana coherente.</p>
+              <ul class="tags" aria-label="Servicios realizados">
+                <li>Dirección visual</li><li>Packaging</li><li>Contenido</li><li>Web</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project reveal">
+            <div class="project-visual mandala-art" aria-hidden="true">
+              <span>MANDALA</span><span>JERI</span><i></i>
+            </div>
+            <div class="project-info">
+              <p class="project-number">02</p>
+              <div>
+                <p class="project-type">Hospitalidad · Operaciones</p>
+                <h3>Mandala Hostel Jeri</h3>
+                <p>Comunicación trilingüe y sistemas de trabajo para mejorar la experiencia de huéspedes y del equipo.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-visual artlink-art" aria-hidden="true">
+              <span>ART</span><span>LINK</span><i></i>
+            </div>
+            <div class="project-info">
+              <p class="project-number">03</p>
+              <div>
+                <p class="project-type">Arte digital · Ilustración</p>
+                <h3>Art Link</h3>
+                <p>Una tienda de arte gráfico que combina exploración visual, tendencias y producción vectorial.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <article class="project project-wide reveal">
+          <div class="project-visual fuegian-art" aria-hidden="true">
+            <span class="mountain one"></span><span class="mountain two"></span>
+            <span class="sun"></span><span class="faro">FIN<br />DEL<br />MUNDO</span>
+          </div>
+          <div class="project-info">
+            <p class="project-number">04</p>
+            <div>
+              <p class="project-type">Sistema gráfico · Editorial</p>
+              <h3>Sabores de nuestra tierra</h3>
+              <p>Íconos, patterns y relatos visuales fueguinos aplicados a una línea de productos artesanales.</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="profile" id="perfil" aria-labelledby="profile-title">
+        <p class="eyebrow reveal">Perfil</p>
+        <div class="profile-grid">
+          <h2 id="profile-title" class="reveal">Diseño con los pies<br />en el mundo real.</h2>
+          <div class="profile-copy reveal">
+            <p>Soy Valentín, diseñador gráfico y profesional de la hospitalidad. Trabajo entre marcas, personas y operaciones: esa mezcla me ayuda a crear soluciones lindas, pero sobre todo útiles.</p>
+            <p>Me especializo en identidad visual, contenido para redes, packaging y piezas digitales. Hablo español, portugués e inglés.</p>
+          </div>
+          <dl class="profile-facts reveal">
+            <div><dt>Base</dt><dd>Brasil</dd></div>
+            <div><dt>Idiomas</dt><dd>ES · PT · EN</dd></div>
+            <div><dt>Enfoque</dt><dd>Identidad · Digital · Packaging</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="contact" id="contacto" aria-labelledby="contact-title">
+        <p class="eyebrow reveal">Contacto</p>
+        <h2 id="contact-title" class="reveal">¿Creamos algo juntos?</h2>
+        <p class="reveal">Estoy disponible para proyectos freelance y colaboraciones.</p>
+        <div class="contact-actions reveal">
+          <a class="primary-action" href="mailto:valentinguillan93@gmail.com">Escribime</a>
+          <a class="text-action" href="https://github.com/valentinguillan" target="_blank" rel="noreferrer">GitHub ↗</a>
+          <button class="text-action share-contact" type="button" data-share>Compartir portfolio ↗</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span data-year></span> Valentín</p>
+      <a href="#inicio">Volver arriba ↑</a>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  </body>
 </html>

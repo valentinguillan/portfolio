@@ -10,8 +10,8 @@ function showToast(message) {
 
 async function sharePortfolio() {
   const data = {
-    title: 'Valentín — Portfolio',
-    text: 'Diseño gráfico · Digital · Hospitalidad',
+    title: 'Valentín Guillán — Diseño gráfico',
+    text: 'Identidad visual, packaging y comunicación digital.',
     url: window.location.href,
   };
 
@@ -38,13 +38,18 @@ document.querySelectorAll('[data-share]').forEach((button) => {
 
 document.querySelector('[data-year]').textContent = new Date().getFullYear();
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.12 });
+if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
 
-document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+  const elements = document.querySelectorAll('.reveal');
+  elements.forEach((element) => observer.observe(element));
+  document.documentElement.classList.add('motion-ready');
+}
+

@@ -44,3 +44,5 @@
   .case-gallery-copy { margin-inline: 1.25rem; }
   .case-related nav { grid-template-columns: minmax(0, 1fr); gap: .75rem; }
 }
+
+@media (min-width: 761px) { .project-grid-real > .project-card:last-child:nth-child(odd) { grid-column: 1 / -1; } }

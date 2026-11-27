@@ -10,6 +10,9 @@ Las fuentes Manrope y DM Sans se sirven desde `assets/fonts/`; sus licencias OFL
 
 ## Contenido
 
+- EXCEL Instituto de Inglés: identidad visual, recursos gráficos y papelería
+- Papelera Tauro: identidad visual y aplicaciones del manual original
+- Cliché Classic: logo, identidad visual y aplicaciones del archivo original
 - Identidad visual y packaging
 - Diseño editorial y contenido digital
 - Notro Eventos: diseño de logo y fotografía de una aplicación real
@@ -33,8 +36,8 @@ Diseño actual, continuidad y desarrollo del sistema gráfico, editorial y de co
 
 ## Incorporación de proyectos
 
-Los cuatro casos nuevos conservan las piezas originales completas, pies de imagen y textos alternativos. Las imágenes se amplían con el teclado o el puntero mediante el visor compartido con La Unión. El video de Suite tiene controles y carga de metadatos; no se reproduce automáticamente.
+Los siete casos incorporados conservan las piezas originales completas, pies de imagen y textos alternativos. Las imágenes se amplían con el teclado o el puntero mediante el visor compartido con La Unión. El video de Suite tiene controles y carga de metadatos; no se reproduce automáticamente.
 
-Esta copia está preparada localmente, sin publicar. La Unión y sus archivos se conservaron sin cambios. Los archivos fuente privados (AI/PDF/AIC), las conversaciones y las propuestas descartadas no se incluyen en el sitio. No hay enlaces de casos nuevos de Behance hasta verificar su publicación.
+La incorporación de EXCEL, Papelera Tauro y Cliché Classic está preparada localmente, pendiente de publicar. La Unión y sus archivos se conservaron sin cambios. Los archivos fuente privados (AI/PDF/AIC), las conversaciones y las propuestas descartadas no se incluyen en el sitio. No hay enlaces de casos nuevos de Behance hasta verificar su publicación.
 
 La revisión estática se registra fuera de la carpeta publicable, en `contenido-proyectos-2026-11-27/_qa/revision-web-proyectos.json`. La revisión visual del sitio y de la reproducción del video queda a cargo del flujo de publicación.

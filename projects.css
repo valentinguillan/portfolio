@@ -46,4 +46,3 @@
 }
 
 @media (min-width: 761px) { .project-grid-real > .project-card:last-child:nth-child(odd) { grid-column: 1 / -1; } }
-

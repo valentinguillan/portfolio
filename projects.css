@@ -1,6 +1,6 @@
 .project-grid-real { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .project-card .project-info { grid-template-columns: minmax(0, 1fr); }
-.project-card-preview { display: block; min-height: 0; height: clamp(300px, 34vw, 480px); background: var(--paper); }
+.project-card-preview { display: block; min-height: 0; height: clamp(300px, 34vw, 480px); background: var(--ink); }
 .project-card-preview img { display: block; width: 100%; height: 100%; object-fit: contain; }
 .project-card-preview::after { content: "Ver proyecto"; position: absolute; right: .75rem; bottom: .75rem; background: var(--ink); color: var(--paper); padding: .65rem .9rem; font-size: .875rem; }
 .project-card-preview:focus-visible { outline: 3px solid var(--paper); outline-offset: 5px; }
@@ -37,7 +37,7 @@
 .project-case .case-lightbox-toolbar button { min-height: 44px; }
 @media (max-width: 760px) {
   .project-grid-real { grid-template-columns: minmax(0, 1fr); }
-  .project-card-preview { height: clamp(360px, 110vw, 520px); }
+  .project-card-preview { height: auto; aspect-ratio: 808 / 632; }
   .project-case .case-intro h1 { font-size: clamp(2.5rem, 10vw, 4.4rem); }
   .project-case .case-gallery, .project-case .case-document-pair { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
   .project-case .case-gallery figcaption { font-size: .9375rem; padding-inline: 1.25rem; }
@@ -46,3 +46,4 @@
 }
 
 @media (min-width: 761px) { .project-grid-real > .project-card:last-child:nth-child(odd) { grid-column: 1 / -1; } }
+
